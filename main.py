@@ -1,14 +1,14 @@
-import tkinter as tk
+from tkinter import *
 import cv2
 import numpy as np
 
-win = tk.Tk()
+win = Tk()
 win.attributes('-fullscreen', True)
 win.title('Door-Man')
 # creat label widget
-cam_start_btn = tk.Button(win, text = "Door Cam", height = 20, width = 40)
+cam_start_btn = Button(win, text = "Door Cam", height = 10, width = 40)
 # pack it onto screen
-cam_start_btn.pack(side = bottom, expand = yes)
+cam_start_btn.pack()
 
 
 win.mainloop()
