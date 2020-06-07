@@ -6,7 +6,7 @@ win = tk.Tk()
 # creat label widget
 myLabel = tk.Label(win, text = "The Door Man!")
 # pack it onto screen
-myLabel.place(relheight = 0.5, relwidth = 0.5)
+myLabel.place(relx = 0.5, rely = 0.5)
 
 
 win.mainloop()
