@@ -15,7 +15,7 @@ class doorFeed:
 		self.win.attributes('-fullscreen', True)
 
 		self.panel = Label(self.win)
-		self.panel.pack(side = BOTTOM, extend = YES)
+		self.panel.pack(side = BOTTOM, expand = YES)
 
 		self.cam = cv2.VideoCapture(0)
 		self.camera1()
