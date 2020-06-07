@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 
 win = tk.Tk()
-win.geometry("1920x1080")
+win.attributes('-fullscreen', True)
 win.title('Door-Man')
 # creat label widget
 cam_start_btn = tk.Button(win, text = "Door Cam")
