@@ -1,7 +1,7 @@
 from tkinter import *
 import cv2
 from PIL import Image
-from PIL import ImageTk
+# from PIL import ImageTk
 import numpy as np
 
 class doorFeed:
