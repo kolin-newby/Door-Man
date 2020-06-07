@@ -7,7 +7,7 @@ win.title('Door-Man')
 # creat label widget
 cam_start_btn = tk.Button(win, text = "Start Camera")
 # pack it onto screen
-cam_start_btn.place(relx = 0, rely = 0.5)
+cam_start_btn.place(relx = 0.5, rely = 0.5, anchor=CENTER)
 
 
 win.mainloop()
@@ -17,6 +17,7 @@ win.mainloop()
 def close():
 	win.destroy()
 
+def cam_toggle():
 
 
 #----------------------------------------
