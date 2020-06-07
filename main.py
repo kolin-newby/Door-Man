@@ -21,7 +21,7 @@ class doorFeed:
 		self.camera1()
 		self.win.mainloop()
 
-	def Camera1(self):
+	def camera1(self):
 		_,frame = self.camera.read()
 		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 		frame = Image.fromarray(frame)
