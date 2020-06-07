@@ -6,7 +6,7 @@ win = tk.Tk()
 win.geometry("1920x1080")
 win.title('Door-Man')
 # creat label widget
-cam_start_btn = tk.Button(win, text = "Peep")
+cam_start_btn = tk.Button(win, text = "Door Cam")
 # pack it onto screen
 cam_start_btn.place(relx = 0.5, rely = 0.5)
 
