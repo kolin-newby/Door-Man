@@ -4,9 +4,9 @@ import numpy as np
 
 root = tk.Tk()
 # creat label widget
-myLabel = tk.Label(root, text = "Hello World!")
+myLabel = tk.Label(root, text = "The Door Man!")
 # pack it onto screen
-myLabel.pack()
+myLabel.place(0.5, 0.5)
 
 
 root.mainloop()
