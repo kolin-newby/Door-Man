@@ -17,7 +17,7 @@ win.mainloop()
 def close():
 	win.destroy()
 
-def cam_toggle():
+# def cam_toggle():
 
 
 #----------------------------------------
