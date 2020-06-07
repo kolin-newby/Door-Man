@@ -9,8 +9,6 @@ win.title('Door-Man App')
 cam_toggle_btn = Button(win, text = 'Door Cam', height = 5, width = 20)
 cam_toggle_btn.pack(side = BOTTOM, expand = YES)
 
-win.mainloop()
-
 def doorFeed():
 	cap = cv2.VideoCapture(0)
 	while(cap.isOpened()):
@@ -35,4 +33,6 @@ display = Label(feed, image = doorFeed())
 display.grid(row = 0, column = 0, padx = 10, pady = 2)
 
 win.protocol("WM_DELETE_WINDOW", close)
+
+win.mainloop()
 
