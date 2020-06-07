@@ -1,27 +1,35 @@
 from tkinter import *
 import cv2
+from PIL import Image
+from PIL import ImageTk
 import numpy as np
 
-win = Tk()
-win.attributes('-fullscreen', True)
-win.title('Door-Man App')
-# creat label widget
-cam_start_btn = Button(win, text = "Door Cam", height = 5, width = 20)
-# pack it onto screen
-cam_start_btn.pack(side=BOTTOM, expand=YES)
+class doorFeed:
+	panel = None
+	win = None
+	cam = None
 
-feed = Frame(win, height = 50, width = 50)
-feed.pack(side = TOP, expand = YES)
+	def __init__(self):
+		self.win = Tk()
+		self.win.title('Door-Man')
+		self.win.attributes('-fullscreen', True)
 
-win.mainloop()
+		self.panel = Label(self.win)
+		self.panel.pack(side = BOTTOM, extend = YES)
+
+		self.cam = cv2.VideoCapture(0)
+		self.camera1()
+		self.win.mainloop()
+
+	def Camera1(self):
+		_,frame = self.camera.read()
+		frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+		frame = Image.fromarray(frame)
+		frame = ImageTk.PhotoImage(frame)
+		self.panel.configure(image = frame)
+		self.panel.image = frame
+		self.panel.After(1, self.Camera)
 
 
-#Functions -----------------------------
-def close():
-	win.destroy()
-
-# def cam_toggle():
-
-
-#----------------------------------------
-win.protocol("WM_DELETE_WINDOW", close)
+if __name__ == '__main__':
+	objVideo = doorFeed()
