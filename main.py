@@ -26,13 +26,13 @@ def close():
 
 
 
-feed = Frame(win)
+feed = Frame(win, image = doorFeed())
 feed.pack(side = TOP, expand = YES)
 
-display = Label(feed, image = doorFeed())
-display.grid(row = 0, column = 0, padx = 10, pady = 2)
-
-win.protocol("WM_DELETE_WINDOW", close)
+# display = Label(feed, image = doorFeed())
+# display.grid(row = 0, column = 0, padx = 10, pady = 2)
 
 win.mainloop()
+
+win.protocol("WM_DELETE_WINDOW", close)
 
