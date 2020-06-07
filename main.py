@@ -5,9 +5,9 @@ import numpy as np
 win = tk.Tk()
 win.title('Door-Man')
 # creat label widget
-cam_start_btn = tk.Button(win, text = "Start Camera")
+cam_start_btn = tk.Button(win, text = "Start Camera", anchor = CENTER)
 # pack it onto screen
-cam_start_btn.place(relx = 0.5, rely = 0.5, anchor=CENTER)
+cam_start_btn.place(relx = 0.5, rely = 0.5)
 
 
 win.mainloop()
