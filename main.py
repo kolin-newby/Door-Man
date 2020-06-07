@@ -8,7 +8,7 @@ win.title('Door-Man')
 # creat label widget
 cam_start_btn = Button(win, text = "Door Cam", height = 5, width = 20)
 # pack it onto screen
-cam_start_btn.pack(side=BOTTOM, extend=YES)
+cam_start_btn.pack(side=BOTTOM, expand=YES)
 
 
 win.mainloop()
