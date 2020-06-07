@@ -3,9 +3,10 @@ import cv2
 import numpy as np
 
 win = tk.Tk()
+win.geometry("1920x1080")
 win.title('Door-Man')
 # creat label widget
-cam_start_btn = tk.Button(win, text = "Start Camera", anchor = CENTER)
+cam_start_btn = tk.Button(win, text = "Peep")
 # pack it onto screen
 cam_start_btn.place(relx = 0.5, rely = 0.5)
 
